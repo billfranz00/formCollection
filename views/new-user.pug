@@ -1,0 +1,7 @@
+extends index.pug
+
+block content
+	form(action="/create-new-user")
+		input(type="text" name="first" placeholder="first name")
+		input(type="text" name="last" placeholder="last name")
+		input(type="submit" value="Create New User Dude!")
