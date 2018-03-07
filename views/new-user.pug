@@ -1,7 +1,11 @@
 extends index.pug
 
 block content
-	form(action="/create-new-user")
+	//- form(action="/create-new-user" method="GET")
+	//- 	input(type="text" name="first" placeholder="first name")
+	//- 	input(type="text" name="last" placeholder="last name")
+	//- 	input(type="submit" value="Create New User Dude!")
+	form(action="/create-new-user" 	method="POST")
 		input(type="text" name="first" placeholder="first name")
 		input(type="text" name="last" placeholder="last name")
 		input(type="submit" value="Create New User Dude!")
