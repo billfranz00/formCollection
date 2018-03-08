@@ -25,7 +25,9 @@ app.get('/create', function(req, res) {
 
 //Form submit via POST request
 app.post("/create-new-user", function(req, res) {
-	return res.send(req.body);
+	// return res.send(req.body);
+	console.log(req.body);
+	return res.redirect("/");
 });
 
 app.listen(3000, function() {
